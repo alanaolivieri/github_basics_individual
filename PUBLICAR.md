@@ -18,7 +18,7 @@ git init -b main
 git add .
 git commit -m "Añade la práctica individual de Git y GitHub"
 git remote add origin https://github.com/TU_USUARIO/github_basics_individual.git
-git push -u origin main
+git push origin main
 ```
 
 - Si ya inicializaste la carpeta desde Desktop, utiliza ese repositorio existente en lugar de repetir la inicialización y el alta del remoto.
