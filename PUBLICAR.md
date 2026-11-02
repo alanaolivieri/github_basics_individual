@@ -16,7 +16,6 @@ Crea en GitHub un repositorio vacío `github_basics_individual`, sin README ni l
 ```bash
 git init -b main
 git add .
-git diff --staged --stat
 git commit -m "Añade la práctica individual de Git y GitHub"
 git remote add origin https://github.com/TU_USUARIO/github_basics_individual.git
 git push -u origin main
