@@ -1,0 +1,12 @@
+# Credenciales y configuración privada
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Archivos temporales
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
