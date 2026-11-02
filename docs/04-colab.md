@@ -42,10 +42,7 @@ En la carpeta del clon, con el estado limpio y después de comprobar que HEAD es
 ```python
 !git log --oneline -5
 !git status
-!git revert --no-edit HEAD
 ```
-
-Después vuelve a ejecutar la celda de publicación del notebook. Es el mismo revert que en una terminal local.
 
 Fuentes: [ejemplo oficial de integración Colab–GitHub](https://github.com/googlecolab/colabtools/blob/main/notebooks/colab-github-demo.ipynb), [preguntas frecuentes de Colab](https://research.google.com/colaboratory/faq.html), [tokens de GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 

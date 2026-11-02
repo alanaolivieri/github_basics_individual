@@ -9,13 +9,9 @@ Crea primero `mi-practica-git` en tu cuenta con README. Desde la carpeta donde q
 ```bash
 git clone https://github.com/TU_USUARIO/mi-practica-git.git
 cd mi-practica-git
-git branch --show-current
-git remote -v
 git status
-git pull --ff-only origin main
+git pull
 ```
-
-Debes estar en `main`, tener `origin` apuntando a tu cuenta y un estado sin cambios pendientes. Si tu rama tiene otro nombre, usa su nombre real en lugar de `main`.
 
 ## B. Crear, editar y añadir archivos
 
@@ -25,15 +21,11 @@ Crea `mi-proyecto.md`, completa la ficha, copia una imagen a `images/mi-imagen.j
 
 ```bash
 git status
-git diff
 git add mi-proyecto.md images/mi-imagen.jpg
-git diff --staged
 git commit -m "Añade la ficha y su imagen"
 git push origin main
 git status
 ```
-
-`git diff` no muestra el contenido de archivos nuevos aún no seguidos. Ábrelos para revisarlos; después de add, `git diff --staged` muestra el contenido de texto que se confirmará. Las imágenes no tienen un diff textual útil.
 
 Si tu imagen tiene otro nombre, usa su ruta real. `git add .` selecciona todos los cambios bajo la carpeta actual, incluidas eliminaciones; para aprender, selecciona archivos concretos.
 
@@ -42,15 +34,13 @@ Si tu imagen tiene otro nombre, usa su ruta real. `git add .` selecciona todos l
 Antes de editar, si no hay cambios pendientes:
 
 ```bash
-git pull --ff-only origin main
+git pull
 ```
 
 Modifica la descripción y guarda. Después:
 
 ```bash
-git diff
 git add mi-proyecto.md
-git diff --staged
 git commit -m "Actualiza la descripción del proyecto"
 git push origin main
 ```
@@ -73,7 +63,7 @@ git commit -m "Elimina el archivo de ideas"
 git push origin main
 ```
 
-`git mv` y `git rm` preparan sus cambios automáticamente. También puedes renombrar o eliminar desde el editor y ejecutar `git add -A` tras revisar el estado.
+`git mv` y `git rm` preparan sus cambios automáticamente.
 
 ## E. Alternativa: empezar desde una carpeta local
 
@@ -94,7 +84,7 @@ git remote add origin https://github.com/TU_USUARIO/mi-practica-local.git
 git push -u origin main
 ```
 
-`-u` vincula tu rama local con la remota: a partir de ahí puedes usar `git push` y `git pull --ff-only`. `git init` crea el repositorio local; no crea el repositorio en la web.
+`-u` vincula tu rama local con la remota: a partir de ahí puedes usar `git push` y `git pull`. `git init` crea el repositorio local; no crea el repositorio en la web.
 
 ## F. Ver el historial
 

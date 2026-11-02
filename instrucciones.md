@@ -8,7 +8,7 @@ Aprender a gestionar versiones de tus archivos sin depender de otras personas. E
 
 En GitHub, inicia sesión y pulsa **+ → New repository**. Usa el nombre `mi-practica-git`, elige visibilidad y marca **Add a README file**. Pulsa **Create repository**. Para aprender, puedes usar un repositorio privado.
 
-No necesitas hacer fork del repositorio de la docente. Puedes copiar las plantillas `mi-proyecto.md` y `bitacora.md` de este material a tu repositorio mediante **Add file → Create new file**. Confirma cada archivo con un mensaje descriptivo.
+Puedes copiar las plantillas `mi-proyecto.md` y `bitacora.md` de este material a tu repositorio mediante **Add file → Create new file**. Confirma cada archivo con un mensaje descriptivo.
 
 ## 2. Completa la ficha
 

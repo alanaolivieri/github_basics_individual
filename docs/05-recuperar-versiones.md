@@ -32,7 +32,7 @@ Para deshacer varios commits, reviértelos del más reciente al más antiguo y r
 
 ```bash
 git status
-git pull --ff-only origin main
+git pull
 git log --oneline -5
 ```
 
@@ -72,7 +72,6 @@ Cuando hayas identificado el correcto:
 
 ```bash
 git restore --source=HASH -- mi-proyecto.md
-git diff
 git add mi-proyecto.md
 git commit -m "Recupera la versión anterior de la ficha"
 git push origin main
@@ -80,23 +79,7 @@ git push origin main
 
 Restore sustituye el contenido de trabajo de ese archivo. Hazlo con el estado limpio para no sobreescribir ediciones que aún necesitas.
 
-## C. Consultar todo el proyecto antiguo sin cambiar main
-
-Con el estado limpio:
-
-```bash
-git switch --detach HASH
-```
-
-Puedes inspeccionar los archivos de esa versión. Estás en un estado separado de las ramas. Para volver:
-
-```bash
-git switch main
-```
-
-Si quieres trabajar a partir de ese punto, crea una rama antes de editar: `git switch -c exploracion-antigua`.
-
-## D. Deshacer el último commit que todavía no has subido
+## C. Deshacer el último commit que todavía no has subido
 
 Úsalo solo si existe un commit anterior y el commit que quitas no se ha publicado.
 

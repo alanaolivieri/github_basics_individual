@@ -32,9 +32,6 @@ Sustituye los datos de ejemplo por los tuyos:
 ```bash
 git config --global user.name "Tu nombre"
 git config --global user.email "tu-correo-asociado-a-github@example.com"
-git config --global init.defaultBranch main
-git config --global --get user.name
-git config --global --get user.email
 ```
 
 El nombre puede ser tu nombre real: no tiene que coincidir con tu usuario. Usa un correo verificado de tu cuenta o copia exactamente el correo privado `noreply` que muestra GitHub en **Settings → Emails**. No inventes esa dirección.

@@ -10,18 +10,17 @@
 | Seleccionar | Se confirma la edición web | Casillas de Changes | + / Stage Changes | `git add archivo` |
 | Confirmar | Commit changes, ya en remoto | Commit to main, local | Commit, local | `git commit -m "Mensaje"` |
 | Subir | Incluido en la confirmación web | Push origin | Push | `git push origin main` |
-| Actualizar local | Recargar muestra el remoto | Fetch y Pull origin | Pull | `git pull --ff-only origin main` |
-| Deshacer publicado | Recuperar contenido antiguo como nueva edición | Revert Changes in Commit | Terminal integrada | `git revert --no-edit HASH` y push |
+| Actualizar local | Recargar muestra el remoto | Fetch y Pull origin | Pull | `git pull` |
+| Recuperar la versión anterior | Copiar el contenido anterior y confirmarlo como nueva edición | History → clic derecho en el último commit → Revert Changes in Commit → Push origin | En la terminal integrada: `git revert --no-edit HEAD` y después `git push` | `git revert --no-edit HEAD` y después `git push` |
+| Ir al commit anterior | Abrir el commit anterior → Browse files | History → clic derecho en el commit anterior → Checkout commit | Ejecutar en la terminal integrada: `git switch --detach HEAD~1` | `git switch --detach HEAD~1` |
 
 ## Ciclo habitual
 
 ```bash
 git status
-git pull --ff-only origin main
+git pull
 # Edita y guarda desde tu editor
-git diff
 git add mi-proyecto.md
-git diff --staged
 git commit -m "Describe el cambio"
 git push origin main
 git log --oneline -5
